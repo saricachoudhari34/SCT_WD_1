@@ -1,2 +1,22 @@
-# SCT_WD_1
-Smart Student Companion — a responsive, single-page website using HTML, CSS, and JavaScript focused on helping students improve focus and productivity.  🔹 Features include a fixed navigation bar, smooth scrolling, dark/light mode, and scroll-based animations with a calm, minimal UI.
+# SCT_WD_1- Responsive Landing Page
+📌 Project Description
+
+Smart Student Companion is a responsive, single-page web application designed to help students improve focus, productivity, and overall study experience through a calm and minimal user interface.
+
+✨ Features
+
+• Responsive single-page layout
+• Fixed navigation bar with smooth scrolling
+• Dark and light mode toggle
+• Scroll-based animations for better user experience
+• Clean, distraction-free UI focused on student wellness
+
+🛠 Technologies Used
+
+• HTML5
+• CSS3 (Flexbox, Grid, CSS Variables)
+• JavaScript (DOM Manipulation, Events)
+
+👩‍💻 Author
+
+Sarica Choudhari
