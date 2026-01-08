@@ -1,0 +1,180 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* LIGHT THEME */
+:root {
+  --bg: #fdfcff;
+  --text: #2c2c2c;
+  --primary: #b8a4e6;
+  --secondary: #f2f0fa;
+}
+
+/* DARK THEME */
+body.dark {
+  --bg: #1c1b22;
+  --text: #f5f5f5;
+  --primary: #9f8bd6;
+  --secondary: #2a2933;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Progress Bar */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0%;
+  background: #ffb703;
+  z-index: 2000;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  background: var(--primary);
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin-left: 40px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid white;
+}
+
+#theme-toggle {
+  margin-left: auto;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Home */
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #c8b6ff, #e7dfff);
+  text-align: center;
+}
+
+.home-content {
+  max-width: 700px;
+}
+
+.home h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.home p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background: white;
+  color: #7a63c9;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sections */
+.section {
+  padding: 100px 60px;
+  text-align: center;
+}
+
+.gray {
+  background: var(--secondary);
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+/* Cards */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background: var(--bg);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* Fade Effect */
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer */
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
+
